@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- Import a chart library, such as Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <a class="navbar-brand" href="#">Dashboard</a>
+  <!-- ... Add your brand/logo or other items here -->
+</nav>
+
+<!-- Main container -->
+<div class="container">
+  <!-- Row with two columns (chart and table) -->
+  <div class="row">
+
+    <!-- Column: Chart -->
+    <div class="col-12 col-lg-6">
+      <!-- Chart element -->
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- Column: Table -->
+    <div class="col-12 col-lg-6">
+      <!-- Table element -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Email address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ... Add your table rows here -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Form element -->
+  <form class="mt-4">
+    <!-- ... Add your form fields here -->
+  </form>
+</div>
+
+<!-- Import the main JavaScript file for this dashboard application -->
+<script src="dashboard.js"></script>
+
+</body>
+</html>
